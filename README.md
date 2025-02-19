@@ -1,14 +1,14 @@
 <div align="center">
 
-[![logo](src/img/logo-b.webp)](https://github.com/ipitio/backage)
+[![logo](src/img/logo-b.webp)](https://github.com/jimboid/backage)
 
-# [backage](https://github.com/ipitio/backage)
+# [backage](https://github.com/jimboid/backage)
 
 **It's all part and parcel**
 
 ---
 
-[![packages](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fipitio%2Fbackage%2Fraw%2Findex%2F.json&query=%24.packages&logo=github&logoColor=959da5&label=packages&labelColor=333a41&color=grey)](https://github.com/ipitio/backage/tree/index) [![build](https://github.com/ipitio/backage/actions/workflows/publish.yml/badge.svg)](https://github.com/ipitio/backage/pkgs/container/backage) [![built](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fipitio%2Fbackage%2Fraw%2Findex%2F.json&query=%24.date&logo=github&logoColor=959da5&label=built&labelColor=333a41&color=purple)](https://github.com/ipitio/backage/releases/latest)
+[![packages](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fjimboid%2Fbackage%2Fraw%2Findex%2F.json&query=%24.packages&logo=github&logoColor=959da5&label=packages&labelColor=333a41&color=grey)](https://github.com/jimboid/backage/tree/index) [![build](https://github.com/jimboid/backage/actions/workflows/publish.yml/badge.svg)](https://github.com/jimboid/backage/pkgs/container/backage) [![built](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fjimboid%2Fbackage%2Fraw%2Findex%2F.json&query=%24.date&logo=github&logoColor=959da5&label=built&labelColor=333a41&color=purple)](https://github.com/jimboid/backage/releases/latest)
 
 </div>
 
@@ -20,7 +20,7 @@ Wish you could show npm, gem, mvn, Gradle, NuGet, or GHCR badges? Or just query 
 https://ipitio.github.io/backage/OWNER/[REPO/[PACKAGE]].FORMAT
 ```
 
-If this is [`ipitio/backage`](https://github.com/ipitio/backage), all you have to do is **star the repo to have GitHub generate this additional endpoint for your public packages!** A service ran by GitHub will add them to its circular priority queue within the next few hours and update the [closed-loop system](https://github.com/ipitio/backage/releases/latest). Additionally watching and forking the repo, and following the owner, are ways to increase your priority. Yes, I know, but these are the signals that can be automatically processed. Otherwise, if this is a fork or you'd prefer an alternative method, see [below](#manual-actions).
+If this is [`ipitio/backage`](https://github.com/ipitio/backage), all you have to do is **star the repo to have GitHub generate this additional endpoint for your public packages!** A service ran by GitHub will add them to its circular priority queue within the next few hours and update the [closed-loop system](https://github.com/jimboid/backage/releases/latest). Additionally watching and forking the repo, and following the owner, are ways to increase your priority. Yes, I know, but these are the signals that can be automatically processed. Otherwise, if this is a fork or you'd prefer an alternative method, see [below](#manual-actions).
 
 Once added, replace the parameters above with their respective values, scoping to your parsing needs, then access the latest data however you want. Use something like [shields.io/json](https://shields.io/badges/dynamic-json-badge) or [shields.io/xml](https://shields.io/badges/dynamic-xml-badge) to make badges like the ones you just scrolled past or the one [here](https://github.com/badges/shields/issues/5594#issuecomment-2157626147).
 
@@ -162,14 +162,14 @@ As can packages in `owner[/repo]/.xml` files:
 
 ### Manual Actions
 
-To add any other users or organizations not yet [in the index](https://github.com/ipitio/backage/tree/index), add the case-sensitive name of each one on a new line at the top of `owners.txt` on your own fork [here](https://github.com/ipitio/backage/edit/master/owners.txt) and make a pull request. Please add just the name(s) -- ids, repos, and packages will be found automatically! If you'd like the service to forget and ignore any subset of packages, add `owner[/repo[/package]]` to `optout.txt` [here](https://github.com/ipitio/backage/edit/master/optout.txt) and make a pull request.
+To add any other users or organizations not yet [in the index](https://github.com/jimboid/backage/tree/index), add the case-sensitive name of each one on a new line at the top of `owners.txt` on your own fork [here](https://github.com/jimboid/backage/edit/master/owners.txt) and make a pull request. Please add just the name(s) -- ids, repos, and packages will be found automatically! If you'd like the service to forget and ignore any subset of packages, add `owner[/repo[/package]]` to `optout.txt` [here](https://github.com/jimboid/backage/edit/master/optout.txt) and make a pull request.
 
 You can create an independent instance for them that'll update faster and more frequently. Simply fork just the `master` branch, then enable Actions from its tab and all disabled workflows. Your own packages will be picked up automatically! If you previously had to edit the `txt` files, you can do so again after the first run. I recommend that you first confirm here that the packages you're interested in are picked up without issue. This centralized repo will then serve as a backup.
 
 ### Alternative URL
 
 ```py
-https://github.com/ipitio/backage/raw/index/OWNER/[REPO/[PACKAGE]].FORMAT
+https://github.com/jimboid/backage/raw/index/OWNER/[REPO/[PACKAGE]].FORMAT
 ```
 
 The endpoint is also available here!
@@ -182,4 +182,4 @@ https://ipitio.github.io/backage?json=https://URL/ENCODED/JSON
 
 Use your own JSON endpoint with this proxy to convert it into XML. Try it out in your browser:
 
-**<https://ipitio.github.io/backage?json=https://raw.githubusercontent.com/ipitio/backage/index/.json>**
+**<https://ipitio.github.io/backage?json=https://raw.githubusercontent.com/jimboid/backage/index/.json>**
