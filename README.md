@@ -16,7 +16,7 @@ Ever wish you could show npm, gem, mvn, Gradle, NuGet, or GHCR badges for GitHub
 
 ## Getting Started
 
-If this is [`jimboid/backage`](https://github.com/jimboid/backage), all you have to do is **star the repo to get your public packages added!** The service's circular priority queue will update the [closed-loop system](https://github.com/jimboid/backage/releases/latest) with them within the next few hours. Additionally watching and forking the repo, and following the owner, are ways to increase their priority. Yes, I know, but these are the graphs GitHub has available.
+If this is [`ipitio/backage`](https://github.com/ipitio/backage), all you have to do is **star the repo to get your public packages added!** The service's circular priority queue will update the [closed-loop system](https://github.com/jimboid/backage/releases/latest) with them within the next few hours. Additionally watching and forking the repo, and following the owner, are ways to increase their priority. Yes, I know, but these are the graphs GitHub has available.
 
 Otherwise, if this is a fork, you'd prefer an alternative method, or your packages weren't added to the [index](https://github.com/jimboid/backage/tree/index) after a day, enter the case-sensitive name of each missing user or organization on a new line at the top of `owners.txt` [here](https://github.com/jimboid/backage/edit/master/owners.txt) and make a pull request. Please submit just the name(s) -- ids, repos, and packages will be found automatically!
 
@@ -25,10 +25,10 @@ After you've confirmed that everything works, you can create an independent inst
 ## The Endpoint
 
 ```py
-https://jimboid.github.io/backage/OWNER/[REPO/[PACKAGE]].FORMAT
+https://ipitio.github.io/backage/OWNER/[REPO/[PACKAGE]].FORMAT
 ```
 
-Once the packages you're interested in have been added, replace the parameters with their respective values, scoping to your parsing needs, then access the latest data however you want. The format can be either `json` or `xml`. Use something like [shields.io/json](https://shields.io/badges/dynamic-json-badge) or [shields.io/xml](https://shields.io/badges/dynamic-xml-badge) to make badges like [this one](https://github.com/badges/shields/issues/5594#issuecomment-2157626147); you'll need `xml` to evaluate expressions, like filters ([issue](https://github.com/jimboid/backage/issues/23)).
+Once the packages you're interested in have been added, replace the parameters with their respective values, scoping to your parsing needs, then access the latest data however you want. The format can be either `json` or `xml`. Use something like [shields.io/json](https://shields.io/badges/dynamic-json-badge) or [shields.io/xml](https://shields.io/badges/dynamic-xml-badge) to make badges like [this one](https://github.com/badges/shields/issues/5594#issuecomment-2157626147); you'll need `xml` to evaluate expressions, like filters ([issue](https://github.com/ipitio/backage/issues/23)).
 
 ### Available Properties
 
@@ -169,9 +169,9 @@ The endpoint is also available here!
 ## JSON2XML Proxy
 
 ```py
-https://jimboid.github.io/backage?json=https://URL/ENCODED/JSON
+https://ipitio.github.io/backage?json=https://URL/ENCODED/JSON
 ```
 
 Use your own external JSON with this proxy to convert it into XML. This doesn't currently work with Shields. Try it out in your browser:
 
-**<https://jimboid.github.io/backage?json=https://raw.githubusercontent.com/jimboid/backage/index/.json>**
+**<https://ipitio.github.io/backage?json=https://raw.githubusercontent.com/jimboid/backage/index/.json>**
